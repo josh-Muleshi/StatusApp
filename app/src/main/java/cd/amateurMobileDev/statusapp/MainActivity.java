@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
     ListView listView;
     ArrayList<ListPojo> list;
-    AdapterList adapterList;
+    AdapterList<L> adapterList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
