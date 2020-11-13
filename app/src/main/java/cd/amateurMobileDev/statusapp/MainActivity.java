@@ -3,8 +3,15 @@ package cd.amateurMobileDev.statusapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.ListView;
+
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
+
+    ListView listView;
+    ArrayList<ListPojo> list;
+    AdapterList adapterList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
