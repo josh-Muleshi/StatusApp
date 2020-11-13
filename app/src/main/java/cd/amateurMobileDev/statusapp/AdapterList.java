@@ -14,9 +14,9 @@ import java.util.ArrayList;
 public class AdapterList<L> extends BaseAdapter {
 
     Context context;
-    AdapterList<ListPojo> listPojos;
+    ArrayList<ListPojo> listPojos;
 
-    public AdapterList(Context context, AdapterList<ListPojo> listPojos) {
+    public AdapterList(Context context, ArrayList<ListPojo> listPojos) {
         this.context = context;
         this.listPojos = listPojos;
     }
@@ -46,7 +46,7 @@ public class AdapterList<L> extends BaseAdapter {
 
         title.setText(listPojos.get(position).getTitle());
         description.setText(listPojos.get(position).getDescription());
-        image.setImageResource(listPojos.get(position).getImage());
+        image.setImageResource(listPojos.get(position).getImages());
 
         view.setOnClickListener(new View.OnClickListener() {
             @Override
